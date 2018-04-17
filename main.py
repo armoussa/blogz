@@ -18,7 +18,7 @@ class Blog(db.Model):
         self.title = title
         self.body = body
 
-#displays form and list of todos
+
 @app.route('/', methods=['POST', 'GET'])
 def index():
 
