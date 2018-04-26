@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Blogz Users:Click to view posts!</h1>
+
+    {% for user in users %}
+
+    <h2><a href="/blog?userid={{user.id}}">{{ user.username }}</h2>
+
+    {% endfor %}
+
+
+
+
+{% endblock %}
